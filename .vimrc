@@ -122,6 +122,6 @@ if executable('ag')
 endif
 
 
-
+nnoremap skel :-1read $HOME/dotfiles/templates/skeleton.cpp<CR>/{
 
 
