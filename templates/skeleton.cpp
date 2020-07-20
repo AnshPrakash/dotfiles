@@ -1,12 +1,11 @@
 #include<bits/stdc++.h>
-#include<iostream>
 
 
 
 #define mod 1000000007
-#define long long ll
-
-
+using ll = long long;
+using ld = long double;
+using ull = unsigned long long;
 
 int main(){
 

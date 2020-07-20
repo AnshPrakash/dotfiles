@@ -9,6 +9,7 @@ set tabstop=2
 set shiftwidth=2 
 set softtabstop =2
 set nowrap
+set hlsearch
 set smartindent
 set smartcase " case sensitive searching untill a capital letter exist in the query
 set colorcolumn=80
@@ -16,7 +17,7 @@ set incsearch
 set encoding=utf-8
 set autochdir " set the cwd to whatever file is in view.
 " Give more space for displaying messages.
-set cmdheight=2
+"set cmdheight=2
 
 "Changing cursor shape in insert mode
 
@@ -121,7 +122,7 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-
+" copy cpp template for competitive programming
 nnoremap skel :-1read $HOME/dotfiles/templates/skeleton.cpp<CR>/{
-
+nnoremap <leader>c : !g++ -o  %:r.out % -Wall -g -Wextra -pedantic -std=c++11  -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align  <Enter>
 
