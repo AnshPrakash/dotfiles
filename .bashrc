@@ -18,6 +18,8 @@ export PS1;
 alias gitgraph='git log --all --decorate --oneline --graph'
 alias ls='ls  --color'
 alias tree='tree -C'
+alias compileC='gcc -Wall -g -Wextra -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -o  code'
+alias compileCPP='g++ -Wall -g -Wextra -pedantic -std=c++11 -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -o  code'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
